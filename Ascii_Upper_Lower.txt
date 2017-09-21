@@ -1,0 +1,95 @@
+Find ASII value of a character.
+===============================
+#include<stdio.h>
+int main()
+{
+    char  ch;
+    printf("\n\t Find ASII value of a character.");
+    printf("\n\t *************************************.");
+    printf("\n\t Please Enter Your Character : ");
+    scanf("%c",&ch);
+    printf("\n\t Your  ASII value is %d",ch);
+    return 0;
+}
+
+
+Find character  of a ASII value
+===============================
+#include<stdio.h>
+int main()
+{
+    int value;
+    printf("\n\t Find character  of a ASII value.");
+    printf("\n\t *************************************.");
+    printf("\n\t Please Enter  ASII value: ");
+    scanf("%d",&value);//input value
+    printf("\n\t Your character  is: %c",value);
+    return 0;
+}
+
+
+ Convert Uppercase Character to Lowercase Character.
+====================================================
+#include<stdio.h>
+int main()
+{
+    char ch;
+    printf("\n\t Convert Uppercase Character to Lowercase Character.");
+    printf("\n\t *************************************.");
+    printf("\n\t Please enter a character in uppercase : ");
+    scanf("%c",&ch);
+    ch=ch+32;
+    printf("\n\t character in lowercase  %c \n",ch);
+    //printf("\n\t character in lowercase  %c \n",ch+32);
+    return 0;
+}
+
+
+Convert  Lowercase  Character to Uppercase Character
+====================================================
+#include<stdio.h>
+int main()
+{
+    char ch;
+    printf("\n\t Convert  Lowercase  Character to Uppercase Character.");
+    printf("\n\t *************************************.");
+    printf("\n\t Please enter a character in Lowercase : ");
+    scanf("%c",&ch);
+    ch=ch-32;
+    printf("\n\t Character in Uppercase %c \n",ch);
+    return 0;
+
+}
+
+Convert Uppercase Character to Lowercase Character using library function .
+==========================================================================
+
+#include<stdio.h>
+int main()
+{
+    char ch;
+    printf("\n\t Convert Uppercase Character to Lowercase Character  using library function.");
+    printf("\n\t *************************************.");
+    printf("\n\t Please enter a character in uppercase : ");
+    scanf("%c",&ch);
+     ch=tolower(ch);// Here tolower is library function.
+    printf("\n\t character in lowercase  %c \n",ch);
+    return 0;
+}
+
+
+Convert  Lowercase  Character to Uppercase Character using library function.
+=====================================================================================
+#include<stdio.h>
+int main()
+{
+    char ch;
+    printf("\n\t Convert  Lowercase  Character to Uppercase Character using library function.");
+    printf("\n\t *************************************.");
+    printf("\n\t Please enter a character in Lowercase : ");
+    scanf("%c",&ch);
+    ch=toupper(ch);// Here toupper is library function.
+    printf("\n\t Character in Uppercase %c \n",ch);
+    return 0;
+
+}
