@@ -1,0 +1,84 @@
+How to convert decimal to ocatal using c programming 
+======================================================
+
+#include<stdio.h>
+int main()
+{
+    int decimalNumber;
+    printf("\n\t Please enter decimal number: ");
+    scanf("%d",&decimalNumber);
+    printf("\n\t You octal number is %o",decimalNumber);
+    return 0;
+}
+
+How to convert ocatal  to decimal using c programming 
+=======================================================
+
+#include<stdio.h>
+int main()
+{
+    int octalNumber;
+    printf("\n\t Please enter octal number: ");
+    scanf("%o",&octalNumber);
+    printf("\n\t You octal number is %d",octalNumber);
+    return 0;
+}
+
+
+
+How to convert decimal to hexa-decimal using c programming 
+==========================================================
+
+#include<stdio.h>
+int main()
+
+{
+int decimalNumber;
+printf("\n\t Please enter decimal number: ");
+scanf("%d",&decimalNumber);
+printf("\n\t Hexadecimal  number is %x: ",decimalNumber);
+return 0;
+}
+
+
+How to convert hexa-decimal to decimal using c programming 
+==========================================================
+
+#include<stdio.h>
+int main()
+
+{
+int hexa_decimal;
+printf("\n\t Please enter hexa-decimal number: ");
+scanf("%x",&hexa_decimal);
+printf("\n\t Decimal number is %d ",hexa_decimal);
+return 0;
+}
+
+How to convert ocatal to hexa-decimal using c programming 
+==========================================================
+
+#include<stdio.h>
+int main()
+{
+    int ocatalNum;
+    printf("\n\t Please enter Octal number: ");
+    scanf("%o",&ocatalNum);
+    printf("\n\tHexa-decimal number is %x",ocatalNum);
+    return 0;
+}
+
+
+How to convert  hexa-decimal to ocatal using c programming 
+==========================================================
+
+#include<stdio.h>
+int main()
+{
+    int hexa_decNum;
+    printf("\n\t Please enter hexa-decimal number: ");
+    scanf("%x",&hexa_decNum);
+    printf("\n\t Octal number is %o",hexa_decNum);
+    return 0;
+}
+
