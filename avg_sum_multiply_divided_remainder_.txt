@@ -1,0 +1,71 @@
+Sum of two integer numbers
+============================
+
+#include<stdio.h>
+int main()
+{
+    int firstNumber,secondNumber,sumOfnumber;
+    printf("\n\t Please enter two  Integer  numbers : ");
+    scanf("%d %d",&firstNumber,&secondNumber);
+    sumOfnumber = firstNumber + secondNumber;
+    printf("\n\t %d + %d = %d",firstNumber,secondNumber,sumOfnumber);
+    return 0;
+
+}
+
+Average of three number
+========================
+
+#include<stdio.h>
+int main()
+{
+    int firstNumber,secondNumber,thirdNumber,sum;
+    float avg;
+    printf("\n\t Please enter three integer numbers: ");
+    //three integers entered by user is store using scanf() funciton.
+    scanf("%d %d %d",&firstNumber,&secondNumber,&thirdNumber);
+    //sum of three numbers in stored in variable sum.
+    sum=firstNumber+secondNumber+thirdNumber;
+    //sum divided by 3 is store in varibale avg
+    avg=(float)sum/3;
+    //display result.
+    printf("\n %d\t / 3 = %.2f",sum,avg);
+    return 0;
+}
+
+Multiply two Floating Point Numbers
+===================================
+
+#include <stdio.h>
+int main()
+{
+double  numberOne,numberTwo,result;
+
+printf("\n\t Please enter two floating point number: ");
+scanf("%lf %lf",&numberOne,&numberTwo);
+result = numberOne * numberTwo;
+printf("%lf * %lf = %.2lf",numberOne,numberTwo,result);
+return 0;
+
+}
+
+Compute Quotient and Remainder
+=============================
+
+#include<stdio.h>
+int main()
+{
+    int dividend,divisor,quotient, remainder;
+    printf("\n\t Please enter dividend: ");
+    scanf("%d",&dividend);
+    printf("\n\t please enter divisor: ");
+    scanf("%d",&divisor);
+    quotient = dividend / divisor;
+    printf("\n\t Quotient is %d",quotient);
+    remainder = dividend % divisor;
+    printf("\n\t remainder is %d",remainder);
+    return 0;
+
+}
+
+
