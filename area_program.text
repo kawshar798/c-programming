@@ -1,0 +1,151 @@
+//how to use it
+==============
+1.just copy and past in codebolcks.
+2.now you read this code line to line
+3.
+
+
+
+1.How to find area of triangle.
+===============================
+#include<stdio.h>
+int main()
+{
+    double base,height,area;
+    printf("\n\t Please Enter Base and Height: ");
+    scanf("%lf %lf",&base,&height);
+    area=.5*base*height;//
+    printf("\n\t Area of triangle is %.2lf ",area);
+    return 0;
+}
+
+2.Calculate area of triangle with given three sides
+====================================================
+#include<stdio.h>
+#include<math.h>//Use for sqrt().
+int main()
+{
+    double a,b,c,per,area;
+    printf("\n\t Enter three sides of triange: ");
+    scanf("%lf %lf %lf",&a,&b,&c);//input three side from user.
+    per=(a+b+c)/2;//here per is the half of perimeter of triangle.
+    area=sqrt(per*(per-a)*(per-b)*(per-c));//it's Herons formula.
+    printf("\n\t area of triangel is %.2lf",area);
+    return 0;
+
+}
+
+3.How to find angles of triangle if two angles are given.
+==========================================================
+
+#include<stdio.h>
+int main()
+{
+    int a,b,c;
+    printf("Enter two angles of triangle: ");
+    scanf("%d %d",&a,&b);
+    c=180-(a+b);//we know a+b+c=180.
+    printf("third angle is %d",c);
+    return 0;
+
+}
+
+4.How to calculate area of equilatral Triangle
+==============================================
+
+#include<stdio.h>
+#include<math.h>//Use for sqrt().
+int main()
+{
+    double area,side;
+    printf("Enter side of Equilatral Triangle: ");
+    scanf("%lf",&side);
+    area=(sqrt(3)/4)*side*side;
+    printf("Area of Equilatral triagnle is %.2lf",area);
+    return 0;
+
+}
+
+5.Find diameter,Circumference and area of circle.
+=================================================
+
+#include<stdio.h>
+#include<math.h>//Use for M_PI.
+int main()
+{
+    float red,diameter,cir,area;
+    printf("Enter redius of circle: ");
+    scanf("%f",&red);
+    diameter = 2 * red;//we know,diamerer=2redius.
+    cir      = 2 * M_PI * red;//circumference=2PIredius.
+    area     = M_PI * (red*red);//area=PIradius*radius.
+    printf("\n Diameter of circle is %.2f",diameter);
+    printf("\n Circumference of circle is %.2f",cir);
+    printf("\n Area of circle is %.2f",area);
+    return 0;
+}
+
+
+6.How to calculate area of square
+=================================
+
+#include<stdio.h>
+int main()
+{
+    double length,area;
+    printf("Enter lenght of square: ");
+    scanf("%lf",&length);
+    area=length*length;
+    printf("Area of square is %.2lf",area);
+    return 0;
+}
+
+
+7.How to calculate area of rectangle
+=====================================
+
+#include<stdio.h>
+int main()
+{
+    double breadth,height,area;
+    printf("Enter breadth and height of rectangle: ");
+    scanf("%lf %lf",&breadth,&height);
+    area = breadth * height;
+    printf("Area of rectangle is %.2lf",area);
+    return 0;
+}
+
+
+7.How to find perimeter of rectangle.
+===================================
+
+#include<stdio.h>
+int main()
+{
+    float length,width,area;
+    printf("Enter length and width: ");
+    scanf("%f %f",&length,&width);
+    area = 2 * (width + length);
+    printf("Perimeter of rectangle is %.2lf",area);
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
